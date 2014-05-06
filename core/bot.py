@@ -289,7 +289,7 @@ class Code(irc.Bot):
 
         if func.args and not input.group(2):
             msg = '{red}No arguments supplied! Try: ' + \
-                  '"{b}{purple}%shelp %s{b}{r}"'
+                  '{r}"{b}{purple}%shelp %s{b}{r}"'
             return code.say(msg % (
                 code.prefix,
                 code.doc[func.name]['commands'][0])
